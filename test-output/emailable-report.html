@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Gestures Testing</a></td><td class="num">1</td><td class="num attn">1</td><td class="num attn">4</td><td class="num">109,766</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Gestures Testing &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testcases2.DataProviderTest</td><td><a href="#m0">preferences_normalclick</a></td><td rowspan="2">1541359644001</td><td rowspan="2">25955</td></tr><tr class="failedeven"><td><a href="#m1">preferences_normalclick</a></td></tr><tr class="failedodd"><td rowspan="1">testcases2.PreferencesTestCase_01</td><td><a href="#m2">preferences_normalclick</a></td><td rowspan="1">1541359674882</td><td rowspan="1">0</td></tr><tr class="failedeven"><td rowspan="1">testcases2.ScrollTestCase</td><td><a href="#m3">gesture_dragDrop</a></td><td rowspan="1">1541359674894</td><td rowspan="1">26173</td></tr><tr><th colspan="4">Gestures Testing &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testcases2.PreferencesTestCase_01</td><td><a href="#m4">preferences_endToend</a></td><td rowspan="1">1541359674894</td><td rowspan="1">0</td></tr><tr><th colspan="4">Gestures Testing &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases2.DataProviderTest</td><td><a href="#m5">preferences_normalclick</a></td><td rowspan="1">1541359596424</td><td rowspan="1">11018</td></tr></tbody>
+</table>
+<h2>Gestures Testing</h2><h3 id="m0">testcases2.DataProviderTest#preferences_normalclick</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>It&apos;s a good day</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
+System info: host: &apos;TILLT000869&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\c-deepak.jindal\wo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appWaitActivity: io.appium.android.apis.ApiD..., appWaitPackage: io.appium.android.apis, databaseEnabled: false, desired: {app: C:\Users\c-deepak.jindal\wo..., deviceName: Moto G4, fullReset: false, noReset: true, platform: ANDROID, platformName: android}, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223DDFBF, deviceScreenSize: 1080x1920, deviceUDID: ZY223DDFBF, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: ANDROID, platformName: Android, platformVersion: 7.0, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: 0f289ce7-86e3-4410-949a-0dd90110531e
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;3. Preference dependencies&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at testcases2.DataProviderTest.preferences_normalclick(DataProviderTest.java:23)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases2.DataProviderTest#preferences_normalclick</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Happily Testing</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
+System info: host: &apos;TILLT000869&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\c-deepak.jindal\wo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appWaitActivity: io.appium.android.apis.ApiD..., appWaitPackage: io.appium.android.apis, databaseEnabled: false, desired: {app: C:\Users\c-deepak.jindal\wo..., deviceName: Moto G4, fullReset: false, noReset: true, platform: ANDROID, platformName: android}, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223DDFBF, deviceScreenSize: 1080x1920, deviceUDID: ZY223DDFBF, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: ANDROID, platformName: Android, platformVersion: 7.0, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: 0f289ce7-86e3-4410-949a-0dd90110531e
+*** Element info: {Using=id, value=android:id/checkbox}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at testcases2.DataProviderTest.preferences_normalclick(DataProviderTest.java:24)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases2.PreferencesTestCase_01#preferences_normalclick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;TextInput&apos; is required by @Test on method preferences_normalclick but has not been marked @Optional or defined
+in C:\Users\c-deepak.jindal\workspace\Appium_testNG\testng.xml
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases2.ScrollTestCase#gesture_dragDrop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
+System info: host: &apos;TILLT000869&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\c-deepak.jindal\wo..., appActivity: io.appium.android.apis.ApiD..., appPackage: io.appium.android.apis, appWaitActivity: io.appium.android.apis.ApiD..., appWaitPackage: io.appium.android.apis, databaseEnabled: false, desired: {app: C:\Users\c-deepak.jindal\wo..., deviceName: Moto G4, fullReset: false, noReset: true, platform: ANDROID, platformName: android}, deviceManufacturer: motorola, deviceModel: Moto G (4), deviceName: ZY223DDFBF, deviceScreenSize: 1080x1920, deviceUDID: ZY223DDFBF, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: ANDROID, platformName: Android, platformVersion: 7.0, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: 0f289ce7-86e3-4410-949a-0dd90110531e
+*** Element info: {Using=xpath, value=//android.view.View[@index=&apos;1&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at testcases2.ScrollTestCase.gesture_dragDrop(ScrollTestCase.java:37)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases2.PreferencesTestCase_01#preferences_endToend</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PreferencesTestCase_01.preferences_endToend(java.lang.String)[pri:0, instance:testcases2.PreferencesTestCase_01@1bce4f0a] depends on not successfully finished methods
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases2.DataProviderTest#preferences_normalclick</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Deepak Jindal</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

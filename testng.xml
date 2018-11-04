@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="testcases2.Listeners"></listener>
+	<listener class-name="testcases2.ExtentReporterNG"></listener>
+</listeners>
+	  <!-- <test  name="Basic Test">
+		  <classes>
+		  	<class name="testCases.ActionBarTestCase_01">
+		  		<methods>
+		  			<include name="action.*"/>
+		  		</methods>
+		  	</class>
+		  	<class name="testCases.ActionBarTestCase_02"/>
+		  </classes>
+	  </test> --> 
+	  <test  name="Gestures Testing">
+	  	<packages>
+	  		<package name="testcases2"/>
+	  	</packages>
+	  </test>
+</suite> 

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="testcases2.Listeners"/>
+    <listener class-name="testcases2.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Gestures Testing(failed)">
+    <classes>
+      <class name="testcases2.PreferencesTestCase_01">
+        <methods>
+          <include name="testapp"/>
+          <include name="preferences_normalclick"/>
+          <include name="preferences_endToend"/>
+          <include name="finishTest"/>
+        </methods>
+      </class> <!-- testcases2.PreferencesTestCase_01 -->
+      <class name="testcases2.ScrollTestCase">
+        <methods>
+          <include name="gesture_dragDrop"/>
+          <include name="testapp"/>
+          <include name="finishTest"/>
+        </methods>
+      </class> <!-- testcases2.ScrollTestCase -->
+      <class name="testcases2.DataProviderTest">
+        <methods>
+          <include name="finishTest"/>
+          <include name="testapp"/>
+          <include name="preferences_normalclick" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- testcases2.DataProviderTest -->
+    </classes>
+  </test> <!-- Gestures Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

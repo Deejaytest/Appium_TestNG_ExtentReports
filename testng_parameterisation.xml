@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	  <!-- <parameter name="TextInput" value="Deepak Jindal"></parameter> --> <!-- Parameter at Suite level -->
+
+	  <!-- <test  name="Basic Test">
+		  <classes>
+		  	<class name="testCases.ActionBarTestCase_01">
+		  		<methods>
+		  			<exclude name="action.*"/>
+		  		</methods>
+		  	</class>
+		  	<class name="testCases.ActionBarTestCase_02"/>
+		  </classes>
+	  </test> --> 
+	  <test  name="Gestures Testing">
+	  <parameter name="TextInput" value="Deepak Jindal"></parameter>   <!-- Parameter at Test level -->
+	  	<packages>
+	  		<package name="testcases2"/>
+	  	</packages>
+	  </test>
+</suite> 
